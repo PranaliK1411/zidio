@@ -1,0 +1,2 @@
+# zidio
+internship activities
