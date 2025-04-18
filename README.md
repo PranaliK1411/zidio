@@ -68,3 +68,61 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+## 🚀 Features
+
+- ✅ User Registration & Login
+- 📋 Add / Edit / Delete Tasks
+- 📂 Manage Projects, Employees, and Teams
+- 🗓️ Schedule and Track Meetings
+- 🔒 Role-based Access (Admin/User)
+- 🔔 SweetAlert Confirmations & Alerts
+- 📊 Dashboard with Real-time Metrics
+- 🎥 Zoom/Jitsi Integration for Video Meetings
+
+**## 🛠️ Tech Stack
+
+| Frontend | Backend | Database |
+|----------|---------|----------|
+| React.js | Node.js | MongoDB,  json-server --watch db.json --port 5000  |
+| React Router | Express.js | Mongoose |
+| Tailwind CSS / Custom CSS | | |
+
+---
+**
+
+## 📁 Folder Structure
+
+task-manager/ │ ├── backend/ │ ├── server.js │ ├── routes/ │ ├── controllers/ │ ├── models/ │ └── config/ │ ├── frontend/ │ ├── public/ │ ├── src/ │ │ ├── components/ │ │ ├── pages/ │ │ ├── App.js │ │ └── index.js │ └── README.md
+
+**🌐 API Endpoints
+
+Method	Endpoint	Description
+GET	/api/tasks	Fetch all tasks
+POST	/api/tasks	Add a new task
+PUT	/api/tasks/:id	Update task
+DELETE	/api/tasks/:id	Delete task
+
+###  Let’s say your project is in D:\ReactProjects\meeting-app (for Windows):
+
+bash
+Copy
+Edit
+cd D:\ReactProjects\meeting-app
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/your-username/meeting-app.git
+git branch -M main
+git push -u origin main
+
+###   commads
+cd task-manager - using this command enter into project 
+npm start - by using this command start the server
+
+cd task-manager - using this command enter into project directory  (note -  commands for start jeson server should be exicuted in seperate terminal)
+ json-server --watch db.json --port 5000 - to start the server.
+
+
