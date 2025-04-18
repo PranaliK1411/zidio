@@ -1,0 +1,123 @@
+/* Register Page Styles */
+.register-container {
+    width: 100%;
+    max-width: 420px;
+    margin: 60px auto;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Heading */
+.register-container h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Error Message */
+.register-container .error-message {
+    font-size: 14px;
+    color: #d9534f;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+/* Form Styling */
+.register-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input Fields */
+.register-container input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border 0.3s, box-shadow 0.3s;
+    margin-bottom: 15px;
+}
+
+.register-container input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit Button */
+.register-container button {
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.register-container button:hover {
+    background: #0056b3;
+    transform: scale(1.02);
+}
+
+/* Already Have an Account Link */
+.register-container p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #007bff;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.register-container p:hover {
+    text-decoration: underline;
+}
+
+/* -------- RESPONSIVE DESIGN -------- */
+
+/* Tablets & Smaller Screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .register-container {
+        max-width: 90%;
+        padding: 25px;
+    }
+
+    .register-container h2 {
+        font-size: 24px;
+    }
+
+    .register-container input,
+    .register-container button {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+
+/* Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .register-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .register-container h2 {
+        font-size: 22px;
+    }
+
+    .register-container input,
+    .register-container button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .register-container p {
+        font-size: 13px;
+    }
+}

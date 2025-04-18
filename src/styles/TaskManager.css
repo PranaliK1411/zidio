@@ -1,0 +1,43 @@
+.task-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+button {
+    margin: 5px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:nth-child(1) {
+    background: green;
+    color: white;
+}
+
+button:nth-child(2) {
+    background: red;
+    color: white;
+}
+
+button:nth-child(3) {
+    background: gray;
+    color: white;
+}
+
+.status.Completed {
+    color: green;
+    font-weight: bold;
+}
+
+.status.Rejected {
+    color: red;
+    font-weight: bold;
+}
+ 
+
+
+
+ 

@@ -1,0 +1,82 @@
+.chart-box {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    transition: transform 0.2s ease-in-out;
+    max-width: 100%;
+    overflow-x: auto; /* Ensures the chart doesn't break on smaller screens */
+}
+
+.chart-box:hover {
+    transform: translateY(-5px);
+}
+
+.chart-box h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Recharts Custom Styling */
+.recharts-cartesian-grid line {
+    stroke: #e0e0e0;
+}
+
+.recharts-legend-wrapper {
+    text-align: center;
+}
+
+.recharts-tooltip-wrapper {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 6px;
+    padding: 8px;
+    color: #fff;
+}
+
+.recharts-tooltip-item {
+    font-size: 14px;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+/* Tablets & Smaller Screens (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .chart-box {
+        padding: 15px;
+        margin: 10px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .chart-box h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Mobile Devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .chart-box {
+        padding: 10px;
+        margin: 5px;
+        width: 95%;
+        text-align: center;
+    }
+
+    .chart-box h2 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .recharts-legend-wrapper {
+        font-size: 12px;
+    }
+
+    .recharts-tooltip-wrapper {
+        font-size: 12px;
+        padding: 5px;
+    }
+}

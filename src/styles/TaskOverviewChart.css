@@ -1,0 +1,94 @@
+/* ---------- CHART BOX STYLING ---------- */
+.chart-box {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px; /* Prevents overly wide charts */
+}
+
+/* Hover Effect */
+.chart-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Chart Title */
+.chart-box h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Tooltip Styling */
+.recharts-tooltip-wrapper {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 6px;
+    padding: 8px;
+    color: #fff;
+}
+
+/* Tooltip Items */
+.recharts-tooltip-item {
+    font-size: 14px;
+}
+
+/* Pie Chart Labels */
+.recharts-pie-label {
+    font-weight: 600;
+    font-size: 14px;
+    fill: #333;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+/* Tablets & Small Screens (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .chart-box {
+        padding: 18px;
+        margin: 15px;
+        max-width: 500px;
+    }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .chart-box {
+        padding: 15px;
+        margin: 10px;
+        max-width: 90%;
+    }
+
+    .chart-box h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Extra Small Screens (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .chart-box {
+        padding: 12px;
+        margin: 8px;
+        max-width: 95%;
+    }
+
+    .chart-box h2 {
+        font-size: 1.2rem;
+    }
+
+    .recharts-tooltip-item {
+        font-size: 12px;
+    }
+
+    .recharts-pie-label {
+        font-size: 12px;
+    }
+}

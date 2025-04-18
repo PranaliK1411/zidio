@@ -1,0 +1,36 @@
+.video-meeting-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.meeting-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.meeting-toolbar button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background 0.2s;
+}
+
+.meeting-toolbar button:hover {
+    background: #0056b3;
+}
+
+.participant-count {
+    margin-left: auto;
+    font-size: 16px;
+    font-weight: bold;
+}

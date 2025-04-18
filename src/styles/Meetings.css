@@ -1,0 +1,185 @@
+/* Meetings Container */
+.meetings-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add Meeting Form */
+.add-meeting {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.add-meeting input,
+.add-meeting textarea {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.add-meeting input:focus,
+.add-meeting textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Add Button */
+.add-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.add-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Meetings Table */
+.meetings-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.meetings-table th, 
+.meetings-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.meetings-table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+/* Table Row Styling */
+.meetings-table tbody tr:nth-child(odd) {
+    background-color: #f8f9fa;
+}
+
+.meetings-table tbody tr:hover {
+    background-color: #e9ecef;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Buttons */
+.edit-btn, .delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Edit Button */
+.edit-btn {
+    color: #ffc107;
+}
+
+.edit-btn:hover {
+    color: #d39e00;
+}
+
+/* Delete Button */
+.delete-btn {
+    color: #dc3545;
+}
+
+.delete-btn:hover {
+    color: #a71d2a;
+}
+
+/* --------- RESPONSIVE DESIGN --------- */
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .add-meeting {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .add-meeting input,
+    .add-meeting textarea {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .add-btn {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .meetings-table th, 
+    .meetings-table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+/* Small Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .meetings-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .add-meeting {
+        padding: 12px;
+    }
+
+    .add-meeting input,
+    .add-meeting textarea {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .add-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .meetings-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .meetings-table th, 
+    .meetings-table td {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .edit-btn, .delete-btn {
+        font-size: 16px;
+    }
+}
