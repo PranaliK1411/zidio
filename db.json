@@ -1,0 +1,112 @@
+{
+  "employees": [
+    {
+      "id": "101",
+      "name": "John Doe",
+      "taskName": "Develop UI",
+      "assignee": "Alice",
+      "taskStatus": "Pending"
+    },
+    {
+      "id": "102",
+      "name": "Jane Smith",
+      "email": "y2EwW@example.com",
+      "taskName": "API Integration",
+      "assignee": "Bob",
+      "taskStatus": "In Progress"
+    },
+    {
+      "id": "103",
+      "name": "Michael Brown",
+      "taskName": "Testing",
+      "assignee": "Charlie",
+      "taskStatus": "Completed"
+    },
+    {
+      "id": "2d6f",
+      "name": "PRANALI KAMBLE",
+      "email": "kamblepranali9009@gmail.com",
+      "role": "web development",
+      "department": "It",
+      "joiningDate": "2222-11-11",
+      "status": "Active"
+    },
+    {
+      "id": "9afc",
+      "name": "PRANALI KAMBLE",
+      "email": "kamblepranali9009@gmail.com",
+      "role": "web development",
+      "department": "It",
+      "joiningDate": "2025-02-22",
+      "status": "Active"
+    },
+    {
+      "id": "d5de",
+      "name": "PRANALI KAMBLE",
+      "email": "kamblepranali9009@gmail.com",
+      "role": "web development",
+      "department": "It",
+      "joiningDate": "2025-03-22",
+      "status": "Active"
+    },
+    {
+      "id": "3d14",
+      "name": "Pranali Kamble",
+      "email": "osnimbalkar@gmail.com",
+      "role": "web development",
+      "department": ",mkk",
+      "joiningDate": "2202-02-22",
+      "status": "Active"
+    }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "name": "Website Redesign",
+      "description": "Revamp the company website",
+      "startDate": "2024-03-01",
+      "endDate": "2024-06-01",
+      "assignedTeam": "Frontend Team",
+      "status": "In Progress",
+      "priority": "High",
+      "projectManager": "Alice Johnson",
+      "budget": 5000,
+      "clientName": "TechCorp",
+      "technologyStack": "React, Node.js"
+    },
+    {
+      "id": "5ade",
+      "name": "Task Management System",
+      "description": "abcdefghijklmnopqrstuvwxyz",
+      "startDate": "2222-12-11",
+      "endDate": "22222-02-11",
+      "assignedTeam": "seed ",
+      "status": "In Progress",
+      "priority": "High",
+      "projectManager": "pranali",
+      "budget": "677777",
+      "clientName": "omkar",
+      "technologyStack": "ReactJs"
+    }
+  ],
+  "meetings": [
+    {
+      "id": "1",
+      "title": "Project Kickoff",
+      "date": "2025-03-28",
+      "time": "10:00 AM",
+      "attendees": "Alice, Bob, Charlie",
+      "agenda": "Discuss project scope and requirements",
+      "status": "Completed"
+    },
+    {
+      "id": "1813",
+      "title": "trainning session",
+      "date": "2025-03-25",
+      "time": "11:11",
+      "attendees": "all ",
+      "agenda": "improve your skills",
+      "status": "Completed"
+    }
+  ]
+}
