@@ -1,0 +1,113 @@
+/* ---------- TASKS CONTAINER ---------- */
+.tasks-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Task List */
+.tasks-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.tasks-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    border-radius: 6px;
+    border-left: 5px solid #007bff;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Hover Effect */
+.tasks-list li:hover {
+    transform: translateY(-3px);
+    background: #f1f1f1;
+}
+
+/* Task Title */
+.task-title {
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Task Details */
+.task-details {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Status Styling */
+.task-status {
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+
+/* Completed Task */
+.task-status.completed {
+    color: #fff;
+    background: #28a745;
+}
+
+/* Rejected Task */
+.task-status.rejected {
+    color: #fff;
+    background: #dc3545;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+/* Tablets & Small Screens */
+@media screen and (max-width: 1024px) {
+    .tasks-container {
+        max-width: 90%;
+    }
+
+    .tasks-list li {
+        padding: 10px;
+    }
+
+    .task-title {
+        font-size: 15px;
+    }
+
+    .task-details {
+        font-size: 13px;
+    }
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 768px) {
+    .tasks-container {
+        padding: 15px;
+    }
+
+    .tasks-list li {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .task-title {
+        font-size: 14px;
+    }
+
+    .task-details {
+        font-size: 12px;
+    }
+
+    .task-status {
+        margin-top: 5px;
+        font-size: 12px;
+    }
+}
